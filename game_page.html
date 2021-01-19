@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maths Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+
+</head>
+<body>
+    <h4 id="player1_name"></h4><span id="player1_score"></span>
+    <br>
+    <h4 id="player2_name"></h4><span id="player2_score"></span>
+    <div class="container">
+    <center>
+        <h1 style="color: white;">Guess The Word!</h1>
+        <h3 id="question"></h3>
+        <h3 id="answer"></h3>
+        <div id="output" class="col-lg-6"></div>
+        <label>Send The Question</label>
+        <input type="number" class="form-control" id="number" placeholder="Enter Multiplicand">
+        <input type="number" class="form-control" id="number1" placeholder="Enter Multiplier">
+        <button style="width: 30% ; margin: 20px;" id="send" class="btn btn-success" onclick="send_number()">Send Question</button>
+    </center>
+    </div>
+    <script src="game_page.js"></script>
+</body>
+</html>

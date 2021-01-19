@@ -1,7 +1,7 @@
 body
 {
-	background: lightblue;
-	text-align: center;
+	background: pink;
+	text-align: left;
 }
 
 	.login_div1 , .login_div2
@@ -19,9 +19,10 @@ body
 	display: inline-block;
 	margin-left: 20px;
 }
-#word
+#number, #number1
 {
 	width: 60%;
+	margin: 20px;
 }
 #word_display
 {
@@ -31,11 +32,18 @@ body
 {
 background: white;
 border-radius: 10px;
-border-top: 10px solid #AA4465;
+border-top: 10px solid #940dbd;
 padding: 10px;
 float: none;
 text-align: left;
 }
 #login_btn{
 	width: 40%;
+}
+.user{
+	width: 30px;
+	height: 30px;
+}
+#Player1, #Player2{
+	height: 30px;
 }
