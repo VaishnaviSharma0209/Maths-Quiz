@@ -47,3 +47,8 @@ text-align: left;
 #Player1, #Player2{
 	height: 30px;
 }
+#C, #W{
+	width: 60%;
+	height: 50px;
+	font-size: 45px;
+}

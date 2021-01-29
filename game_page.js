@@ -33,18 +33,26 @@ function check(){
     if(get_answer==answer){
         if(question_turn=="player_1"){
             player2_score=player2_score+1;
-            document.getElementById("player2_score").innerHTML=player2_score;
+            document.getElementById("player2_score").innerHTML=" " + player2_score;
+            document.getElementById("C").style.display="inline-block";
+            document.getElementById("W").style.display="none";
         }
         else{
             player1_score=player1_score+1;
-            document.getElementById("player1_score").innerHTML=player1_score;
+            document.getElementById("player1_score").innerHTML=" " + player1_score;
+            document.getElementById("C").style.display="inline-block";
+            document.getElementById("W").style.display="none";
         }
+    }
+    if(get_answer!==answer){
+        document.getElementById("W").style.display="inline-bloc";
+        document.getElementById("C").style.display="none";
     }
     if (question_turn=="player_1"){
         question_turn="player_2";
         answer_turn="player_1";
-        document.getElementById("question").innerHTML="Question Turn-" + player2;
-        document.getElementById("answer").innerHTML="Answer Turn-" + player1;
+        document.getElementById("question").innerHTML="Question Turn: " + player2;
+        document.getElementById("answer").innerHTML="Answer Turn-: " + player1;
     }
     else{
         question_turn="player_1";
